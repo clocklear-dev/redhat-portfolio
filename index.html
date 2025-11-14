@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat Product Portfolio: The Open Hybrid Cloud Foundation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Define the Inter font family */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background for high contrast */
+            color: #e5e7eb;
+        }
+        .infographic-card {
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+        .infographic-card:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 10px 15px -3px rgba(255, 0, 0, 0.2), 0 4px 6px -2px rgba(255, 0, 0, 0.05);
+        }
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .icon-check {
+            color: #dc2626; /* Red 600 */
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <header class="text-center mb-12 py-8 bg-red-600 rounded-xl shadow-2xl">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-2 tracking-tight">
+                Red Hat Product Portfolio: The Open Hybrid Cloud Foundation
+            </h1>
+            <p class="text-xl text-red-200">
+                Powering your IT future with open source innovation across hybrid cloud, automation, and AI.
+            </p>
+        </header>
+
+        <!-- Core Products Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+            <!-- RHEL Card -->
+            <div class="infographic-card bg-gray-800 p-6 rounded-2xl border-t-4 border-red-600 shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="server" class="w-8 h-8 text-red-500 mr-3"></i>
+                    <h2 class="text-2xl font-bold text-white">Red Hat Enterprise Linux</h2>
+                </div>
+                <p class="text-gray-400 mb-6">The trusted foundation for hybrid cloud, providing consistency and control across RHEL 8, 9, and 10.</p>
+                
+                <h3 class="text-lg font-semibold text-red-400 mb-3 border-b border-gray-700 pb-1">Latest Innovation Highlights (RHEL 8.10, 9.6, 10)</h3>
+                <ul class="space-y-3">
+                    <li class="feature-item">
+                        <i data-lucide="lightbulb" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">RHEL Lightspeed (10/9.6):</span> <span class="text-gray-400 text-sm">Gen AI command-line assistant for proactive guidance and faster troubleshooting.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="container" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Image Mode (10/9.6):</span> <span class="text-gray-400 text-sm">Container-native OS management for immutable, streamlined deployment at scale.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="shield-check" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Enhanced Compliance (8.10):</span> <span class="text-gray-400 text-sm">Updated SCAP security profiles (CIS, PCI DSS 4.0) for regulatory alignment.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="cloud" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Modern Security Stacks (9.6):</span> <span class="text-gray-400 text-sm">OpenSSL 3.2.2 and support for encrypted DNS configuration (Zero Trust ready).</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ansible Card -->
+            <div class="infographic-card bg-gray-800 p-6 rounded-2xl border-t-4 border-red-600 shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="repeat" class="w-8 h-8 text-red-500 mr-3"></i>
+                    <h2 class="text-2xl font-bold text-white">Red Hat Ansible Automation Platform</h2>
+                </div>
+                <p class="text-gray-400 mb-6">A unified, enterprise-grade platform for end-to-end automation across the entire IT landscape (Platform 2.6 features).</p>
+
+                <h3 class="text-lg font-semibold text-red-400 mb-3 border-b border-gray-700 pb-1">Latest Innovation Highlights</h3>
+                <ul class="space-y-3">
+                    <li class="feature-item">
+                        <i data-lucide="zap" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Ansible Lightspeed:</span> <span class="text-gray-400 text-sm">Intelligent Assistant helps create content faster with Gen AI code generation.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="workflow" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Event-Driven Automation:</span> <span class="text-gray-400 text-sm">Automate tasks by defining rules that respond automatically to external events.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="gauge" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Automation Analytics:</span> <span class="text-gray-400 text-sm">Track key metrics like ROI, time savings, and job success rates across the enterprise.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="layers" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Automation Mesh Enhancements:</span> <span class="text-gray-400 text-sm">Flexible and reliable scaling of execution capacity across diverse networks (Edge).</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- OpenShift Card -->
+            <div class="infographic-card bg-gray-800 p-6 rounded-2xl border-t-4 border-red-600 shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i data-lucide="box" class="w-8 h-8 text-red-500 mr-3"></i>
+                    <h2 class="text-2xl font-bold text-white">Red Hat OpenShift</h2>
+                </div>
+                <p class="text-gray-400 mb-6">The leading Kubernetes platform for running containerized applications and services anywhere, at scale (4.19+ features).</p>
+
+                <h3 class="text-lg font-semibold text-red-400 mb-3 border-b border-gray-700 pb-1">Latest Innovation Highlights</h3>
+                <ul class="space-y-3">
+                    <li class="feature-item">
+                        <i data-lucide="message-square" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">OpenShift Lightspeed:</span> <span class="text-gray-400 text-sm">Gen AI assistant integrated into the console for cluster help and documentation.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="rocket" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Gateway API GA:</span> <span class="text-gray-400 text-sm">General availability of the modern, expressive Kubernetes Ingress API standard.</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="shuffle" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">Red Hat Build of Kueue:</span> <span class="text-gray-400 text-sm">General availability for advanced job queue and resource management (especially for ML).</span>
+                    </li>
+                    <li class="feature-item">
+                        <i data-lucide="network" class="w-4 h-4 icon-check"></i>
+                        <span class="text-gray-300 font-medium">User Defined Networks (UDNs):</span> <span class="text-gray-400 text-sm">Enhanced networking flexibility for multi-tenant and VM integration.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Red Hat AI 3.0 Section (Focused Banner) -->
+        <section class="bg-gray-900 p-8 sm:p-12 rounded-2xl border-l-4 border-r-4 border-red-600 shadow-2xl">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center bg-red-600/20 text-red-400 px-4 py-2 rounded-full mb-4">
+                    <i data-lucide="brain" class="w-6 h-6 mr-2"></i>
+                    <h2 class="text-3xl font-bold tracking-wider">Red Hat AI 3.0</h2>
+                </div>
+                <p class="text-xl text-gray-300">
+                    any model, any accelerator, any cloud
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                
+                <!-- Feature 1: llm-d -->
+                <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                    <i data-lucide="split" class="w-7 h-7 text-red-500 mx-auto mb-2"></i>
+                    <h4 class="font-bold text-lg text-white mb-1">Distributed Inference (llm-d)</h4>
+                    <p class="text-sm text-gray-400">Kubernetes-native distributed serving engine for predictable performance of LLMs at scale (GA).</p>
+                </div>
+                
+                <!-- Feature 2: MaaS -->
+                <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                    <i data-lucide="plug-zap" class="w-7 h-7 text-red-500 mx-auto mb-2"></i>
+                    <h4 class="font-bold text-lg text-white mb-1">Models-as-a-Service (MaaS)</h4>
+                    <p class="text-sm text-gray-400">Developer preview of control plane, API gateway, RBAC, and cost-tracking for internal model providers.</p>
+                </div>
+
+                <!-- Feature 3: Collaboration -->
+                <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                    <i data-lucide="users" class="w-7 h-7 text-red-500 mx-auto mb-2"></i>
+                    <h4 class="font-bold text-lg text-white mb-1">AI Hub & Gen AI Studio</h4>
+                    <p class="text-sm text-gray-400">Centralized lifecycle governance (AI Hub) and interactive prototyping environment (Studio).</p>
+                </div>
+
+                <!-- Feature 4: Hardware & Open -->
+                <div class="bg-gray-800 p-5 rounded-xl border border-gray-700">
+                    <i data-lucide="cpu" class="w-7 h-7 text-red-500 mx-auto mb-2"></i>
+                    <h4 class="font-bold text-lg text-white mb-1">Multi-Vendor Acceleration</h4>
+                    <p class="text-sm text-gray-400">Expanded hardware support (NVIDIA, AMD, **Intel**, IBM Spyre) and validated open source model catalog.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer for context -->
+        <footer class="text-center mt-12 pt-6 border-t border-gray-700">
+            <p class="text-gray-500 text-sm">
+                This infographic highlights key features from recent releases (RHEL 8.10, 9.6, 10, OpenShift 4.19, Ansible Platform 2.6, and AI 3.0).
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- Script to initialize Lucide icons -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
